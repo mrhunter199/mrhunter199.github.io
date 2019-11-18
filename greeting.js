@@ -15,12 +15,17 @@ if (time > 18) {
 }
 
 var greetingSelector = document.querySelector('.external-script-widget[data-widget-id="greeting"]');
-
+var firstName = we.authMgr.getUser().firstName;
+var profileLink = "/profile/" + we.authMgr.getUser().id
 if (greetingSelector) {
-    greetingSelector.innerHTML = greeting + ',&nbsp;' + we.authMgr.getUser().firstName + '!<br> Schön, dass Du da bist! ' + emoji;
+    greetingSelector.innerHTML = greeting + ',&nbsp;' + firstName + '!<br> Schön, dass Du da bist! ' + emoji;
 } else {
     console.log("This didn't work. Try again");
 }
 
-
-// Hallo,&nbsp;{{user.profile.firstName}}!<br>Schön, dass Du hier bist!
+var a = document.createElement('a');
+var linkText = document.createTextNode("my title text");
+a.appendChild(linkText);
+a.title = "my title text";
+a.href = profileLink; 
+document.greetingSelector.appendChild(a);
