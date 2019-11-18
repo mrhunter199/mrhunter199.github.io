@@ -16,20 +16,10 @@ if (time > 18) {
 
 var greetingSelector = document.querySelector('.external-script-widget[data-widget-id="greeting"]');
 var firstName = we.authMgr.getUser().firstName;
-var profileLink = "/profile/" + we.authMgr.getUser().id
-var a = document.createElement('a');
-var linkText = greetingSelector.innerHTML = greeting + ',&nbsp;' + firstName + '!<br> Schön, dass Du da bist! ' + emoji;
-a.appendChild(linkText);
-a.title = "my title text";
-a.href = profileLink; 
-document.body.appendChild(a);
-
-greetingSelector.innerHTML = linkText;
-
-/*
+var profileLink = "/profile/" + we.authMgr.getUser().id;
+var greetingMessage = greeting + ',&nbsp;' + firstName + '!<br> Schön, dass Du da bist! ' + emoji;
 if (greetingSelector) {
-    greetingSelector.innerHTML = greeting + ',&nbsp;' + firstName + '!<br> Schön, dass Du da bist! ' + emoji;
+    greetingSelector.innerHTML = greetingMessage.link(profileLink);
 } else {
     console.log("This didn't work. Try again");
-}
-*/
+};
