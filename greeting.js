@@ -17,7 +17,10 @@ if (time > 18) {
 var greetingSelector = document.querySelector('.external-script-widget[data-widget-id="greeting"]');
 
 if (greetingSelector) {
-	greetingSelector.innerHTML = greeting + ' ' + we.util.ui.name(we.authMgr.getUser()) + ' Schön, dass Du da bist! ' + emoji;
+	greetingSelector.innerHTML = greeting + ' ' + we.util.ui.firstName(we.authMgr.getUser()) + ' Schön, dass Du da bist! ' + emoji;
 } else {
     console.log("This didn't work. Try again");
 }
+
+
+// Hallo,&nbsp;{{user.profile.firstName}}!<br>Schön, dass Du hier bist!
