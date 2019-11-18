@@ -14,7 +14,7 @@ if (time > 18) {
     var emoji = "🌛";
 }
 
-var greetingSelector = document.querySelector('#greeting');
+var greetingSelector = document.querySelector('data-widget-id="greeting"');
 
 if (greetingSelector) {
 	greetingSelector.innerHTML = greeting + ' ' + we.util.ui.name(we.authMgr.getUser()) + ' Schön, dass Du da bist! ' + emoji;
