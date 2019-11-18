@@ -18,14 +18,18 @@ var greetingSelector = document.querySelector('.external-script-widget[data-widg
 var firstName = we.authMgr.getUser().firstName;
 var profileLink = "/profile/" + we.authMgr.getUser().id
 var a = document.createElement('a');
-var linkText = document.createTextNode("my title text");
+var linkText = greetingSelector.innerHTML = greeting + ',&nbsp;' + firstName + '!<br> Schön, dass Du da bist! ' + emoji;
 a.appendChild(linkText);
 a.title = "my title text";
 a.href = profileLink; 
-document.greetingSelector.appendChild(a);
+document.body.appendChild(a);
 
+greetingSelector.innerHTML = linkText;
+
+/*
 if (greetingSelector) {
     greetingSelector.innerHTML = greeting + ',&nbsp;' + firstName + '!<br> Schön, dass Du da bist! ' + emoji;
 } else {
     console.log("This didn't work. Try again");
 }
+*/
