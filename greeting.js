@@ -5,7 +5,7 @@ if (time < 12) {
     var greeting = "Guten Morgen";
     var emoji = "🌞";
 }
-if (time >= 12 && time <18) {
+if (time >= 12) {
     var greeting = "Hallo";
     var emoji = "☀";
 }
@@ -18,6 +18,7 @@ var greetingSelector = document.querySelector('.external-script-widget[data-widg
 var firstName = we.authMgr.getUser().firstName;
 var profileLink = "/profile/" + we.authMgr.getUser().id;
 var greetingMessage = greeting + ',&nbsp;' + firstName + '!<br> Schön, dass Du hier bist! ' + emoji;
+
 if (greetingSelector) {
     greetingSelector.innerHTML = greetingMessage.link(profileLink);
 } else {
