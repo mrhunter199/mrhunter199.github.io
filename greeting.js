@@ -5,11 +5,11 @@ if (time < 12) {
     var greeting = "Guten Morgen";
     var emoji = "🌞";
 }
-if (time > 12 && time <18) {
+if (time >= 12 && time <18) {
     var greeting = "Hallo";
     var emoji = "☀";
 }
-if (time > 18) {
+if (time >= 18) {
     var greeting = "Guten Abend";
     var emoji = "🌛";
 }
