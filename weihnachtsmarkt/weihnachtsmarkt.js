@@ -1,4 +1,4 @@
-var food = ['Bratwurst', 'Champignons', 'Dieses Brot mit Gemüse', 'Langos', 'Speckkuchen', 'Pommes', 'Elchburger', 'Lachs'];
+var food = ['Bratwurst', 'Champignons', 'Dieses Brot mit Gemüse', 'Langos', 'Speckkuchen', 'Pommes', 'Elchburger', 'Lachs', 'Waffeln', 'Crepes', 'Reibekuchen', 'Spießbraten', 'Steak', 'Raclette'];
 
 function getFood() {
 var randomFood = food[Math.floor(Math.random()*food.length)];
