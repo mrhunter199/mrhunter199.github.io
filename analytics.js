@@ -5,11 +5,11 @@ function analytics(item, index) {
     let analytics = {
     contentRankings: {
     path: 'branch/analytics/contents/rankings',
-    daysAgo: days
+    daysAgo: item
     },
 postsRankings: {
     path: 'branch/analytics/posts/rankings',
-    daysAgo: days
+    daysAgo: item
     },
 postsTimeseries: {
     path: 'branch/analytics/posts/timeseries',
@@ -37,7 +37,7 @@ for (element in analytics) {
     + "'>" + element + "</a><br>";
 }
 new we.ui.widget.Dialog({
-    headline: 'Auswertung der letzten' + days + 'Tage',
+    headline: 'Auswertung der letzten' + item + 'Tage',
     content: links
     });
 }
