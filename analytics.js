@@ -37,7 +37,7 @@ for (element in analytics) {
     + "'>" + element + "</a><br>";
 }
 new we.ui.widget.Dialog({
-    headline: 'Auswertung der letzten' + item + 'Tage',
+    headline: 'Auswertung der letzten ' + item + ' Tage',
     content: links
     });
 }
