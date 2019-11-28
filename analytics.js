@@ -1,5 +1,5 @@
 let days = [30, 365]
-
+days.forEach(analytics);
 function analytics() {
     let analytics = {
     contentRankings: {
@@ -41,4 +41,3 @@ new we.ui.widget.Dialog({
     });
 }
 
-days.forEach(analytics);
