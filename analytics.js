@@ -1,4 +1,4 @@
-(function() {
+(function analytics() {
     let analytics = {
     contentRankings: {
     path: 'branch/analytics/contents/rankings',
