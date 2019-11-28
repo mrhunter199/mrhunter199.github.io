@@ -1,5 +1,6 @@
-(function analytics() {
-    let days = 365;
+let days = [30, 365]
+
+function analytics() {
     let analytics = {
     contentRankings: {
     path: 'branch/analytics/contents/rankings',
@@ -35,7 +36,9 @@ for (element in analytics) {
     + "'>" + element + "</a><br>";
 }
 new we.ui.widget.Dialog({
-    headline: 'Auswertung der letzten 365 Tage',
+    headline: 'Auswertung der letzten' + days + 'Tage',
     content: links
     });
-}());
+}
+
+days.forEach(analytics);
