@@ -4,24 +4,37 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
             <meta charset="utf-8" />
             <link rel="stylesheet" href="stylesheet.css">
+            <script src="http://code.jquery.com/jquery-latest.js">
+            </script>
+         <script>
+                $(document).ready(function(){
+                  $("button").click(function(){
+                    $("#antwort").load("weihnachtsmarkt.js");
+                  });
+                });
+                </script>
     </head>
     <script src="weihnachtsmarkt.js"></script>
     <title>Weihnachtsmarkt</title>
     <body>
-            <div class="hero-image">
-                    <div class="hero-text">
-                      <h1>Was esse ich heute auf dem Weihnachtsmarkt?</h1>
-                      <p>Finde es heraus!</p>
-                    </div>
-                  </div> 
+        <div class="hero-image">
+            <div class="hero-text">
+            <h1>Was esse ich heute auf dem Weihnachtsmarkt?</h1>
+            <p>Finde es heraus!</p>
+            </div>
+            </div> 
+            <div class="center">
         <div class="main">
         <div class="result">
+            <div id=antwort-wrapper>
             <h3 id="antwort"><script type ="text/javascript">document.write(antwort)</script></h3>
         </div>
+        </div>
         <div class="button" align="center">
-            <button class="button" id="newResult" type="button" onClick="window.location.reload();">Sag's mir!</button>
+            <button class="button" id="newResult" type="button">Sag's mir!</button>
         </div>
         </div>
+    </div>
         <div class="footer">
             <p>&copy; 2019 Roman Jäger</p>
         </div>
