@@ -1,8 +1,8 @@
-const days = [7, 14, 30, 365];
-const index = 0;
+var days = [7, 14, 30, 365];
+var index = 0;
 days.forEach(analytics);
 function analytics(item, index) {
-    let analytics = {
+    var analytics = {
     contentRankings: {
     path: 'branch/analytics/contents/rankings',
     daysAgo: item
@@ -26,7 +26,7 @@ usersTimeseries: {
 },
 links = "";
 for (element in analytics) {
-    let since = we.util.date.daysAgo(analytics[element].daysAgo).toISOString();
+    var since = we.util.date.daysAgo(analytics[element].daysAgo).toISOString();
     links += "<a href='"
     + we.system.baseURL
     + "/" + we.api._apiPath
