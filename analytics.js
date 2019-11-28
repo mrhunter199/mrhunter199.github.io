@@ -1,4 +1,4 @@
-let days = [30, 365];
+let days = [7, 14, 30, 365];
 let index = 0;
 days.forEach(analytics);
 function analytics(item, index) {
