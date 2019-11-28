@@ -1,12 +1,13 @@
 (function analytics() {
+    let days = 365;
     let analytics = {
     contentRankings: {
     path: 'branch/analytics/contents/rankings',
-    daysAgo: 7
+    daysAgo: days
     },
 postsRankings: {
     path: 'branch/analytics/posts/rankings',
-    daysAgo: 7
+    daysAgo: days
     },
 postsTimeseries: {
     path: 'branch/analytics/posts/timeseries',
@@ -34,7 +35,7 @@ for (element in analytics) {
     + "'>" + element + "</a><br>";
 }
 new we.ui.widget.Dialog({
-    headline: 'Here are the links',
+    headline: 'Auswertung der letzten 365 Tage',
     content: links
     });
 }());
