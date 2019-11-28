@@ -1,6 +1,7 @@
-let days = [30, 365]
+let days = [30, 365];
+let index = 0;
 days.forEach(analytics);
-function analytics() {
+function analytics(item, index) {
     let analytics = {
     contentRankings: {
     path: 'branch/analytics/contents/rankings',
