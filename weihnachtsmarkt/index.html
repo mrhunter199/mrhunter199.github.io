@@ -9,7 +9,7 @@
          <script>
                 $(document).ready(function(){
                   $("button").click(function(){
-                    $("#antwort").load("#antwort");
+                    $("#antwort").load("#antwort-wrapper");
                   });
                 });
                 </script>
@@ -31,7 +31,8 @@
         </div>
         </div>
         <div class="button" align="center">
-            <button id="newResult" type="button" onClick="window.location.reload();">Sag's mir!</button>
+            <button id="oldButton" type="button" onClick="window.location.reload();">Sag's mir!</button>
+            <button id="newResult" type="button" onClick="window.location.reload();">NewButton Test</button>
         </div>
         </div>
     </div>
