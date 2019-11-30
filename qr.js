@@ -1,6 +1,6 @@
 var charsetSource = "&charset-source=UTF-8";
 var charsetTarget = "&charset-target=UTF-8";
-var color = "&color-90-40-115"
+var color = "&color=90-40-115"
 var firstName = encodeURIComponent(we.authMgr.getUser().firstName);
 var lastName = encodeURIComponent(we.authMgr.getUser().lastName);
 var phone = encodeURIComponent(we.authMgr.getUser().phoneNumber);
