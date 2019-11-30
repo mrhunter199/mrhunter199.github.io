@@ -1,10 +1,7 @@
-var charsetSource = "&charset-source=UTF-8";
-var charsetTarget = "&charset-target=UTF-8";
 var color = "&color=90-40-115"
 var firstName = encodeURIComponent(we.authMgr.getUser().firstName);
 var lastName = encodeURIComponent(we.authMgr.getUser().lastName);
 var phone = encodeURIComponent(we.authMgr.getUser().phoneNumber);
-var mobilePhone = "";
 var company = encodeURIComponent(we.authMgr.getUser().profile.firma);
 var email = encodeURIComponent(we.authMgr.getUser().profile.publicEmailAddress.toLowerCase());
 var size = "&size=220x220&margin=0";
@@ -19,5 +16,3 @@ if (qrSelector) {
 } else {
     console.log("This didn't work. Try again");
 };
-
-// <img src="http://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=100x100" alt="" title="" />
