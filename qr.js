@@ -13,7 +13,8 @@ var url = "https://api.qrserver.com/v1/create-qr-code/?data=BEGIN%3AVCARD%0AVERS
 var qrSelector = document.querySelector('.external-script-widget[data-widget-id="qrcode"]');
 
 if (qrSelector) {
-    qrSelector.innerHTML = "<img src ='" + url + ">";
+    console.log(url);
+    qrSelector.innerHTML = "<img src ='" + url + "'>";
 } else {
     console.log("This didn't work. Try again");
 };
