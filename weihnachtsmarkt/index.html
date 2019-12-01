@@ -4,7 +4,6 @@
             <meta charset="utf-8" />
             <link rel="stylesheet" href="stylesheet.css">
             <script src="weihnachtsmarkt.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <title>Weihnachtsmarkt</title>
     <body>
@@ -17,12 +16,10 @@
             <div class="center">
         <div class="main">
         <div class="result">
-            <div id=antwort-wrapper>
-            <h3 id="antwort"><script type ="text/javascript">document.write(antwort)</script></h3>
-        </div>
+            <h3 id="antwort">Klick auf den Button!</h3>
         </div>
         <div class="button" align="center">
-           <button id="button" type="button" onClick="window.location.reload();">Sag's mir!</button>
+           <button id="button" type="button" onClick="document.getElementById('antwort').innerHTML = getFood();">Sag's mir!</button>
         </div>
         </div>
     </div>
