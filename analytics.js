@@ -1,4 +1,4 @@
-var days = [7, 14, 30, 365];
+var days = [7, 14, 30, 90, 365];
 var index = 0;
 days.forEach(analytics);
 function analytics(item, index) {
