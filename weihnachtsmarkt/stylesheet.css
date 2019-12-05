@@ -4,6 +4,10 @@ body,html {
     height: 100%;
 }  
 
+canvas{
+    position:absolute;top:0;left:0
+ }
+
 .center {
     
     width:80%;
@@ -86,6 +90,7 @@ p {
     }
 
 .main {
+    position: sticky;
     padding: 20px;
     padding-top: 30px;
     
