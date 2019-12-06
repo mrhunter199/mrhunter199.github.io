@@ -2,15 +2,18 @@ var d = new Date();
 var time = d.getHours();
 
 if (time < 12) {
-    var greeting = "Guten Morgen";
+    //var greeting = "Guten Morgen";
+    var greeting = "Ho, ho, ho";
     var emoji = "🌞";
 }
 if (time >= 12) {
-    var greeting = "Hallo";
+    //var greeting = "Hallo";
+var greeting = "Ho, ho, ho";
     var emoji = "☀";
 }
 if (time >= 18) {
-    var greeting = "Guten Abend";
+    //var greeting = "Guten Abend";
+var greeting = "Ho, ho, ho";
     var emoji = "🌛";
 }
 
